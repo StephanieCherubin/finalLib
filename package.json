@@ -1,0 +1,17 @@
+{
+  "name": "mathLibrary",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "andatelib": "^1.1.2",
+    "math-substitution": "^1.0.0",
+    "string-substitution": "^2.0.0"
+  }
+}
