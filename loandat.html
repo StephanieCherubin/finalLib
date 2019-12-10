@@ -7,6 +7,7 @@
   <body>
 <h1 class="title">Loan Dat</h1>
 <small class="sub-title">The best loan data, we know everything about you!</small>
+<h1>Please use the console!</h1>
 <div id="content">
   <!-- Content -->
 </div>
@@ -23,32 +24,32 @@ function displayData({ id, user_name, first_name, last_name, company_name, loan,
       <ul>
         <li>
             <!-- 1) User name needs uppercase -->
-          <p>${user_name}</p>
+          <p>${stringSub.allCaps(user_name)}</p>
           <!-- 2) first and Last name should be first letter uppercase -->
-          <p>${first_name+ " " +last_name}</p>
+          <p>${stringSub.firstUpper(first_name)+ " " + stringSub.firstUpper(last_name)}</p>
         </li>
         <li>
             <!-- 3) Company Name should be title/heading case -->
-          <h1>${company_name}</h1>
+          <h1>${stringSub.capitalizeHeadline(company_name)}</h1>
           <!-- 4) slug/kabobcase company name -->
-          <p>${company_name}</p>
+          <p>${stringSub.kabobCase(company_name)}</p>
         </li>
         <!-- 5) format loan amount as dollars -->
-        <li>Loan amount: ${loan}</li>
+        <li>Loan amount: ${mathSub.toDollars(loan)}</li>
         <!-- 6) Calculate tax amount from rate and loan -->
-        <li>Tax amount: ${rate + " " + loan}</li>
+        <li>Tax amount: ${mathSub.toDollars(mathSub.tax(rate * loan))}</li>
         
         <li>
           <!-- 7) format date Year Short Month date and day: Format the dates as: 2011 Jan 11 (Tuesday) -->
-          <p>Loan Date: ${date}</p>
+          <p>Loan Date: ${ new dateSub.AnDate(date).fullDateString()}</p>
           <!-- 8) Include a relative date from now and date 
                   display this something like: three years ago -->
-          <p>${new Date() + " " + date}</p>
+          <p>${new dateSub.AnDate(date).when()}</p>
         </li>
         
         <!-- 9) Calculate the interest on loan by finding the number of years between now 
         and the date supplied. Use rate as the interest rate. --> 
-        <li>Your interest is: ${rate + " " + loan + " " + date}</li>
+        <li>Your interest is: ${mathSub.toDollars(mathSub.tax(rate * loan)) + " - " + new dateSub.AnDate(date).when()}</li>
       </ul>
     </div>
   `
