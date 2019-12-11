@@ -5,6 +5,10 @@ console.log(stringSub.allCaps('abcde')) */
 const mathSub = require('math-substitution')
 const dateSub = require('andatelib')
 
+function calculateInterests (total,year,rate) {
+  const interest = rate/100+1;
+  return parseFloat((total*Math.pow(interest,year)).toFixed(4));
+}
 
 function displayData({ id, user_name, first_name, last_name, company_name, loan, rate, date }) {
   return `
@@ -37,7 +41,7 @@ function displayData({ id, user_name, first_name, last_name, company_name, loan,
         
         <!-- 9) Calculate the interest on loan by finding the number of years between now 
         and the date supplied. Use rate as the interest rate. --> 
-        <li>Your interest is: ${mathSub.toDollars(mathSub.tax(rate * loan)) + " - " + new dateSub.AnDate(date).when()}</li>
+        <li>Your interest is: ${mathSub.toDollars(calculateInterests(loan, (2019 - new dateSub.AnDate(date).year()), rate))}</li>
       </ul>
     </div>
   `
