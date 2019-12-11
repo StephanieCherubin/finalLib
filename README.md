@@ -24,7 +24,7 @@ Use your library to solve these problems:
 
 3) The company_name should be title case (). 
 
-4) Make a "slug" name from the company_name. This should be kabobcase. 
+4) Make a "slug" name from the company-name. This should be kebobcase. 
 
 5) Format loan as dollars. 
 
@@ -34,10 +34,10 @@ Use your library to solve these problems:
 
 8) Also, include a relative date description. Something like: 3 years ago, or two months ago.
 
-9) Calculate the interest from the date and the tax. You'll need the total, years, and rate. Calculate the years as the difference between two day and date in the data.
+9) Calculate the interest from the date and the tax. You'll need the total, years, and rate. Calculate the years as the difference between today and date in the data.
 
 ## Extra Credit
 
-1) Implement your API library. This is up to you. But illustrate it's use for the final. 
+1) Implement your API library. This is up to you. But illustrate its use for the final. 
 
 
