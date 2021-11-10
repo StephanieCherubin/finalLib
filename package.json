@@ -12,6 +12,9 @@
   "dependencies": {
     "andatelib": "^1.1.2",
     "math-substitution": "^1.0.0",
-    "string-substitution": "^2.0.0"
+    "path-parse": "^1.0.7",
+    "set-value": "^4.1.0",
+    "string-substitution": "^2.0.0",
+    "tmpl": "^1.0.5"
   }
 }
