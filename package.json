@@ -12,11 +12,11 @@
   "dependencies": {
     "andatelib": "^1.1.2",
     "ansi-regex": "^6.0.1",
-    "eslint": "^8.2.0",
+    "eslint": "^8.28.0",
     "math-substitution": "^1.0.0",
-    "node-notifier": "^8.0.1",
+    "node-notifier": "^10.0.1",
     "path-parse": "^1.0.7",
-    "serialize-javascript": "^3.1.0",
+    "serialize-javascript": "^6.0.0",
     "set-value": "^4.1.0",
     "string-substitution": "^2.0.0",
     "tmpl": "^1.0.5"
