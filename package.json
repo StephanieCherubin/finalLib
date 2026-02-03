@@ -12,7 +12,7 @@
   "dependencies": {
     "andatelib": "^1.1.2",
     "ansi-regex": "^6.0.1",
-    "eslint": "^8.28.0",
+    "eslint": "^9.39.2",
     "math-substitution": "^1.0.0",
     "node-notifier": "^10.0.1",
     "path-parse": "^1.0.7",
