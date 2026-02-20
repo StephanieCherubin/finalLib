@@ -16,7 +16,7 @@
     "math-substitution": "^1.0.0",
     "node-notifier": "^10.0.1",
     "path-parse": "^1.0.7",
-    "serialize-javascript": "^6.0.0",
+    "serialize-javascript": "^6.0.2",
     "set-value": "^4.1.0",
     "string-substitution": "^2.0.0",
     "tmpl": "^1.0.5"
